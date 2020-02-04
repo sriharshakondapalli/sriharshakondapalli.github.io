@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Harsha Kondapalli</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    @font-face {
+	  font-family: 'BenchNine';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: local('BenchNine Bold'), local('BenchNine-Bold'), url(https://fonts.gstatic.com/s/benchnine/v7/ahcev8612zF4jxrwMosT6-xhgmy4.ttf) format('truetype');
+	}
+	@font-face {
+	  font-family: 'Open Sans Condensed';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v13/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+	}
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
+	html,
+	body {
+	  height: 100%;
+	  /* The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers */
+	  background: linear-gradient(left, #E7E7E7, white, #E7E7E7);
+	  /* The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix */
+	  background: linear-gradient(to right, #E7E7E7, white, #E7E7E7);
+	}
+	.container {
+	  width: 100%;
+	  height: 100%;
+	}
+	.wrapper {
+	  width: 270px;
+	  margin: 50px auto;
+	  position: Relative;
+	}
+	.word {
+	  display: block;
+	  text-align: justify;
+	  font-family: "BenchNine";
+	  line-height: 0.8;
+	  text-transform: uppercase;
+	  letter-spacing: 0px;
+	}
+	.word1,
+	.word2 {
+	  color: #9BC5DE;
+	}
+	.word3,
+	.word4 {
+	  color: #90B3C9;
+	}
+	.word5,
+	.word6 {
+	  color: #809BB0;
+	}
+	.word7 {
+	  color: #6B7B8A;
+	}
+	.word8,
+	.word9 {
+	  color: #8B8091;
+	}
+	.word10,
+	.word11 {
+	  color: #B68FA2;
+	}
+	.word12,
+	.word13 {
+	  color: #D99AB5;
+	}
+	.word1 {
+	  font-size: 4.2em;
+	}
+	.word2 {
+	  font-size: 4.1em;
+	}
+	.word3 {
+	  font-size: 4.8em;
+	}
+	.word4 {
+	  font-size: 6.4em;
+	}
+	.word5 {
+	  font-size: 3.8em;
+	}
+	.word6 {
+	  font-size: 6em;
+	}
+	.word7 {
+	  font-size: 4.5em;
+	}
+	.word8 {
+	  font-size: 4.8em;
+	}
+	.word9 {
+	  font-size: 3.4em;
+	}
+	.word11 {
+	  font-size: 7.9em;
+	}
+	.word10 {
+	  font-size: 4.9em;
+	}
+	.word12 {
+	  font-size: 8.2em;
+	}
+	.word13 {
+	  font-size: 7.8em;
+	}
+	.bubble1 {
+	  height: 100px;
+	  width: 100px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #99C5DE;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 20px;
+	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 20px;
+	  top: 0;
+	  left: -130px;
+	  padding: 10px;
+	  font-size: 2.25em;
+	  line-height: 1;
+	}
+	.bubble1 span.the-arrow1 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 12px solid transparent;
+	  border-right: 0px solid #99C5DE;
+	  border-bottom: 12px solid #99C5DE;
+	  position: absolute;
+	  top: 87px;
+	  left: 100px;
+	  transform: rotateY(180deg);
+	}
+	.bubble2 {
+	  height: 230px;
+	  width: 260px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #99C5DE;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 30px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  left: 280px;
+	  top: 5px;
+	}
+	.bubble2 span.the-arrow2 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #99C5DE;
+	  border-bottom: 20px solid #99C5DE;
+	  position: absolute;
+	  top: 210px;
+	  left: -19px;
+	}
+	.bubble2 img {
+	  border-top-left-radius: 20px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 20px;
+	  border-bottom-left-radius: 0;
+	  background: white;
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	}
+	.bubble3 {
+	  height: 240px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #90B2CB;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 30px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  top: 120px;
+	  left: -300px;
+	  line-height: 1.1;
+	}
+	.bubble3 span.the-arrow3 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #90B2CB;
+	  border-bottom: 20px solid #90B2CB;
+	  position: absolute;
+	  top: 0;
+	  left: 270px;
+	  transform: rotate(180deg);
+	}
+	.bubble4 {
+	  height: 230px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #809BAE;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 30px;
+	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 30px;
+	  top: 260px;
+	  left: 280px;
+	}
+	.bubble4 span.the-arrow4 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #809BAE;
+	  border-bottom: 20px solid #809BAE;
+	  position: absolute;
+	  top: 0;
+	  left: -19px;
+	  transform: rotateX(180deg);
+	}
+	.bubble5 {
+	  height: 240px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #697A8A;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 30px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  top: 380px;
+	  left: -300px;
+	}
+	.bubble5 span.the-arrow5 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #697A8A;
+	  border-bottom: 20px solid #697A8A;
+	  position: absolute;
+	  top: 0;
+	  left: 270px;
+	  transform: rotate(180deg);
+	}
+	.bubble6 {
+	  height: 185px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #8B8091;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 30px;
+	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 30px;
+	  top: 509px;
+	  left: 280px;
+	  line-height: 1.5;
+	}
+	.bubble6 span.the-arrow6 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #8B8091;
+	  border-bottom: 20px solid #8B8091;
+	  position: absolute;
+	  top: 0px;
+	  left: -19px;
+	  transform: rotateX(180deg);
+	}
+	.bubble7 {
+	  height: 260px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #B68EA6;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 30px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  top: 640px;
+	  left: -300px;
+	  line-height: 1.5;
+	}
+	.bubble7 span.the-arrow7 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #B68EA6;
+	  border-bottom: 20px solid #B68EA6;
+	  position: absolute;
+	  top: 0;
+	  left: 270px;
+	  transform: rotate(180deg);
+	}
+	.bubble8 {
+	  height: 180px;
+	  width: 270px;
+	  padding: 20px;
+	  position: absolute;
+	  color: white;
+	  background-color: #D99AB5;
+	  font-family: "Open Sans Condensed";
+	  border-top-left-radius: 30px;
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  top: 710px;
+	  left: 280px;
+	  line-height: 1.5;
+	}
+	.bubble8 span.the-arrow8 {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-left: 20px solid transparent;
+	  border-right: 0px solid #D99AB5;
+	  border-bottom: 20px solid #D99AB5;
+	  position: absolute;
+	  top: 160px;
+	  left: -19px;
+	}
+
+    </style>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+	
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.4;
+}
+</style>
+
+<canvas class="background"></canvas>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Particles</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</head>
+	
+<body>
+
+  <div class="container">
+  <div class="word_split wrapper">
+  <span class="word word1">Sri Harsha </span>
+  <span class="word word2">Kondapalli</span>
+  <span class="word word3">Personal</span>
+  <span class="word word4">Details</span>
+  <span class="word word5">Employment</span>
+  <span class="word word6">History </span>
+  <span class="word word7">Education</span>
+  <span class="word word8">Personal</span>
+  <span class="word word9">Achievements</span>
+  <span class="word word10">Technical</span>
+  <span class="word word11">Skills </span>
+  <span class="word word12">Get In </span>
+  <span class="word word13">Touch</span>
+    
+    <div class="bubble1">
+     <span class="the-arrow1"></span>
+      HI! <br/> I AM..
+   </div>
+  <div class="bubble2">
+     <span class="the-arrow2"></span>
+    <img src="./DP.jpg"/>
+   </div>
+  <div class="bubble3">
+     <span class="the-arrow3"></span>
+    BIRTHDAY: March 11<br/><br/>
+    NATIONALITY: India<br/>
+	<br/>
+    PRESENT ADDRESS:<br/>
+	6151 Waterman Blvd, Apt # 1N,
+	St. Louis, MO, USA 63112<br/>
+    <br/>
+    WORK ADDRESS:<br/>
+    Room No - 0160,
+	Green Hall,<br/>
+	One Brookings Drive,<br/>
+	St. Louis, MO, USA 63130<br/>
+   </div>
+  <div class="bubble4">
+     <span class="the-arrow4"></span>
+    Graduate Student Researcher 2015-Current<br/>
+    Adaptive Integraed Microsystems Laboratory<br/>
+	Mc Kelvey School of Engineering<br/>
+    Washington University in St. Louis<br/>
+    <br/>
+	Teaching Assistant 2015-2016<br/>
+	Washington University in St. Louis<br/>
+	<br/>
+    Summer Intern 2013<br/>
+	Imagination Technologies, India<br/>
+    
+   </div>
+  <div class="bubble5">
+     <span class="the-arrow5"></span>
+    Ph.D. Candidate<br/>
+    Electrical and Systems Engineering<br/>
+    Washington University in St. Louis, MO, USA<br/><br/>
+    M.S. 17'<br/>
+    Electrical and Systems Engineering<br/>
+    Washington University in St. Louis, MO, USA<br/><br/>
+	B.Tech. 14' <br/>
+    Electrical Engineering<br/>
+    IIT Hyderabad, India
+    
+   </div>
+  <div class="bubble6">
+     <span class="the-arrow6"></span>
+    Champions of RFID Mega Challenge 2019<br/>
+    Awardee of LEAP Inventor Challenge<br/>
+    Co-Founder of Therabotics.Inc<br/>
+    Runner-up in WashU Patent Challenge<br/>
+	Part of Guinness World Record<br/>
+	Vice-President of UMANG Grad Student Org<br/>
+   </div>
+  <div class="bubble7">
+     <span class="the-arrow7"></span>
+    RF Engineering<br/>
+    PCB Design<br/>
+    Cadence<br/>
+    ASIC Design<br/>
+    Soldering<br/>
+	USRP<br/>
+    Ultrasound Engineering<br/>
+    MATLAB<br/>
+	Automatic Test Equipment<br/>
+   </div>
+  <div class="bubble8">
+     <span class="the-arrow8"></span>
+    PHONE: +1-314-326-0339<br/>
+    EMAIL: <a href="mailto:sriharshakondapalli@wustl.edu">sriharshakondapalli@wustl.edu</a><br/>
+    WEBSITE: <a href="sites.google.com/view/sriharshakondapalli">sites/sriharshakondapalli</a><br/>
+    LINKEDIN: <a href="https://www.linkedin.com/in/sriharshakondapalli7"> linkedin/sriharshakondapalli</a><br/>
+    FACEBOOK: <a href="https://www.facebook.com/kondapalli.sriharsha">facebook/sriharshakondapalli</a> <br/>
+    INSTAGRAM: <a href="https://www.instagram.com/sri_harsha_kondapalli">instagram/sriharshakondapalli</a><br/>
+   </div>   
+</div>
+   
+</div><!--end container-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="./script.js"></script>
+
+	
+<script type="text/javascript">
+var particles;
+particles = Particles.init({
+  selector: ".background",
+  color: ["#DA0463", "#404B69", "#DBEDF3"],
+  connectParticles: true,
+  speed: 5
+});
+function pause() {
+  particles.pauseAnimation();
+}
+function resume() {
+  particles.resumeAnimation();
+}
+</script>
+	
+</body>
+</html>

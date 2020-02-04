@@ -3,507 +3,1205 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sri Harsha Kondapalli</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <style>
-    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-    @font-face {
-	  font-family: 'BenchNine';
-	  font-style: normal;
-	  font-weight: 700;
-	  src: local('BenchNine Bold'), local('BenchNine-Bold'), url(https://fonts.gstatic.com/s/benchnine/v7/ahcev8612zF4jxrwMosT6-xhgmy4.ttf) format('truetype');
-	}
-	@font-face {
-	  font-family: 'Open Sans Condensed';
-	  font-style: normal;
-	  font-weight: 300;
-	  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v13/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
-	}
-	* {
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	}
-	html,
-	body {
-	  height: 100%;
-	  /* The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers */
-	  background: linear-gradient(left, #E7E7E7, white, #E7E7E7);
-	  /* The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix */
-	  background: linear-gradient(to right, #E7E7E7, white, #E7E7E7);
-	}
-	.container {
-	  width: 100%;
-	  height: 100%;
-	}
-	.wrapper {
-	  width: 270px;
-	  margin: 50px auto;
-	  position: Relative;
-	}
-	.word {
-	  display: block;
-	  text-align: justify;
-	  font-family: "BenchNine";
-	  line-height: 0.8;
-	  text-transform: uppercase;
-	  letter-spacing: 0px;
-	}
-	.word1,
-	.word2 {
-	  color: #9BC5DE;
-	}
-	.word3,
-	.word4 {
-	  color: #90B3C9;
-	}
-	.word5,
-	.word6 {
-	  color: #809BB0;
-	}
-	.word7 {
-	  color: #6B7B8A;
-	}
-	.word8,
-	.word9 {
-	  color: #8B8091;
-	}
-	.word10,
-	.word11 {
-	  color: #B68FA2;
-	}
-	.word12,
-	.word13 {
-	  color: #D99AB5;
-	}
-	.word1 {
-	  font-size: 4.2em;
-	}
-	.word2 {
-	  font-size: 4.1em;
-	}
-	.word3 {
-	  font-size: 4.8em;
-	}
-	.word4 {
-	  font-size: 6.4em;
-	}
-	.word5 {
-	  font-size: 3.8em;
-	}
-	.word6 {
-	  font-size: 6em;
-	}
-	.word7 {
-	  font-size: 4.5em;
-	}
-	.word8 {
-	  font-size: 4.8em;
-	}
-	.word9 {
-	  font-size: 3.4em;
-	}
-	.word11 {
-	  font-size: 7.9em;
-	}
-	.word10 {
-	  font-size: 4.9em;
-	}
-	.word12 {
-	  font-size: 8.2em;
-	}
-	.word13 {
-	  font-size: 7.8em;
-	}
-	.bubble1 {
-	  height: 100px;
-	  width: 100px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #99C5DE;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 20px;
-	  border-bottom-right-radius: 0;
-	  border-bottom-left-radius: 20px;
-	  top: 0;
-	  left: -130px;
-	  padding: 10px;
-	  font-size: 2.25em;
-	  line-height: 1;
-	}
-	.bubble1 span.the-arrow1 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 12px solid transparent;
-	  border-right: 0px solid #99C5DE;
-	  border-bottom: 12px solid #99C5DE;
-	  position: absolute;
-	  top: 87px;
-	  left: 100px;
-	  transform: rotateY(180deg);
-	}
-	.bubble2 {
-	  height: 230px;
-	  width: 260px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #99C5DE;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 30px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 30px;
-	  border-bottom-left-radius: 0;
-	  left: 280px;
-	  top: 5px;
-	}
-	.bubble2 span.the-arrow2 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #99C5DE;
-	  border-bottom: 20px solid #99C5DE;
-	  position: absolute;
-	  top: 210px;
-	  left: -19px;
-	}
-	.bubble2 img {
-	  border-top-left-radius: 20px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 20px;
-	  border-bottom-left-radius: 0;
-	  background: white;
-	  display: block;
-	  width: 100%;
-	  height: 100%;
-	}
-	.bubble3 {
-	  height: 240px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #90B2CB;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 30px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 30px;
-	  border-bottom-left-radius: 0;
-	  top: 120px;
-	  left: -300px;
-	  line-height: 1.1;
-	}
-	.bubble3 span.the-arrow3 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #90B2CB;
-	  border-bottom: 20px solid #90B2CB;
-	  position: absolute;
-	  top: 0;
-	  left: 270px;
-	  transform: rotate(180deg);
-	}
-	.bubble4 {
-	  height: 230px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #809BAE;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 30px;
-	  border-bottom-right-radius: 0;
-	  border-bottom-left-radius: 30px;
-	  top: 260px;
-	  left: 280px;
-	}
-	.bubble4 span.the-arrow4 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #809BAE;
-	  border-bottom: 20px solid #809BAE;
-	  position: absolute;
-	  top: 0;
-	  left: -19px;
-	  transform: rotateX(180deg);
-	}
-	.bubble5 {
-	  height: 240px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #697A8A;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 30px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 30px;
-	  border-bottom-left-radius: 0;
-	  top: 380px;
-	  left: -300px;
-	}
-	.bubble5 span.the-arrow5 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #697A8A;
-	  border-bottom: 20px solid #697A8A;
-	  position: absolute;
-	  top: 0;
-	  left: 270px;
-	  transform: rotate(180deg);
-	}
-	.bubble6 {
-	  height: 185px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #8B8091;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 30px;
-	  border-bottom-right-radius: 0;
-	  border-bottom-left-radius: 30px;
-	  top: 509px;
-	  left: 280px;
-	  line-height: 1.5;
-	}
-	.bubble6 span.the-arrow6 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #8B8091;
-	  border-bottom: 20px solid #8B8091;
-	  position: absolute;
-	  top: 0px;
-	  left: -19px;
-	  transform: rotateX(180deg);
-	}
-	.bubble7 {
-	  height: 260px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #B68EA6;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 30px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 30px;
-	  border-bottom-left-radius: 0;
-	  top: 640px;
-	  left: -300px;
-	  line-height: 1.5;
-	}
-	.bubble7 span.the-arrow7 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #B68EA6;
-	  border-bottom: 20px solid #B68EA6;
-	  position: absolute;
-	  top: 0;
-	  left: 270px;
-	  transform: rotate(180deg);
-	}
-	.bubble8 {
-	  height: 180px;
-	  width: 270px;
-	  padding: 20px;
-	  position: absolute;
-	  color: white;
-	  background-color: #D99AB5;
-	  font-family: "Open Sans Condensed";
-	  border-top-left-radius: 30px;
-	  border-top-right-radius: 0;
-	  border-bottom-right-radius: 30px;
-	  border-bottom-left-radius: 0;
-	  top: 710px;
-	  left: 280px;
-	  line-height: 1.5;
-	}
-	.bubble8 span.the-arrow8 {
-	  display: inline-block;
-	  width: 0;
-	  height: 0;
-	  border-left: 20px solid transparent;
-	  border-right: 0px solid #D99AB5;
-	  border-bottom: 20px solid #D99AB5;
-	  position: absolute;
-	  top: 160px;
-	  left: -19px;
-	}
-
-    </style>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-	
+  <title>Sri Harsha Kondapalli - Personal gallery</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Harsha Kondapalli</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.010/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script|Roboto'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
 <style>
-html,
-body {
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%; }
+
+img {
+  width: 100%; 
 }
 
-.background {
-  position: absolute;  
+.container {
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+/***********************************UNIVERSAL STYLES***********************************/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #454545; }
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding-right: 25px;
+    padding-left: 25px; } }
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.accent-text {
+  font-family: "Dancing Script", cursive;
+  color: #E52E2D; }
+
+.active {
+  color: #E52E2D; }
+
+.is-checked {
+  color: #E52E2D; }
+
+h2 {
+  margin-bottom: 20px; }
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #a3a3a3; }
+
+ul {
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+/***********************************SCROLL BAR STYLES***********************************/
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a3a3a3;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E52E2D; }
+
+/***********************************PRELOAD PAGE***********************************/
+#preload-overlay {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
-  opacity: 0.4;
+  z-index: 9000; }
+
+.loader-frame {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative; }
+
+.loader1, .loader2 {
+  position: absolute;
+  border: 5px solid transparent;
+  border-radius: 50%; }
+
+.loader1 {
+  width: 100px;
+  height: 100px;
+  border-top: 5px solid #E52E2D;
+  border-bottom: 5px solid #E52E2D;
+  -webkit-animation: clockwisespin 2s linear infinite;
+  animation: clockwisespin 2s linear infinite; }
+
+.loader2 {
+  width: 90px;
+  height: 90px;
+  border-left: 5px dotted #454545;
+  border-right: 5px dotted #454545;
+  top: 5px;
+  left: 5px;
+  -webkit-animation: anticlockwisespin 2.5s linear infinite;
+  animation: anticlockwisespin 2.5s linear infinite; }
+
+@-webkit-keyframes clockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes clockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes anticlockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes anticlockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadeout {
+  from {
+    opactity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    opactity: 1; }
+  to {
+    opacity: 0; } }
+
+/***********************************HEADER STYLES***********************************/
+#main-header {
+  position: fixed;
+  top: 50px;
+  max-height: 70px;
+  width: 100%;
+  padding: 20px 0 10px 0;
+  z-index: 900;
+  background: #fff;
+  border-bottom: 1px #E52E2D solid;
+  overflow: hidden; }
+  @media screen and (max-width: 760px) {
+    #main-header {
+      padding-top: 25px; } }
+
+.open-nav {
+  max-height: 400px !important; }
+  .open-nav .mobile-toggle {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+
+.logo {
+  float: left;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-size: 27pt;
+  font-weight: bold;
+  color: #E52E2D;
+  font-family: "Dancing Script", cursive; }
+  @media screen and (max-width: 760px) {
+    .logo {
+      float: none; } }
+
+#main-header nav {
+  width: 80%;
+  float: right; }
+  @media screen and (max-width: 760px) {
+    #main-header nav {
+      width: 100%; } }
+  #main-header nav ul {
+    float: right;
+    overflow: hidden;
+    list-style: none;
+    text-align: right; }
+    @media screen and (max-width: 760px) {
+      #main-header nav ul {
+        width: 100%;
+        float: left;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        text-align: center; } }
+    #main-header nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+      line-height: 1.5; }
+      @media screen and (max-width: 760px) {
+        #main-header nav ul li {
+          width: 100%;
+          padding: 10px 0;
+          margin: 0; } }
+    #main-header nav ul a {
+      color: #454545;
+      text-transform: uppercase;
+      font-size: 14px;
+      -webkit-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+    #main-header nav ul .active {
+      color: #E52E2D; }
+    #main-header nav ul a:hover {
+      color: #E52E2D; }
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+  @media screen and (max-width: 760px) {
+    .mobile-toggle {
+      display: block; } }
+  .mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #454545;
+    display: block; }
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 25px; }
+
+/***********************************HERO STYLES***********************************/
+#hero {
+  background: url("http://www.gotechnologix.com/wp-content/uploads/2016/05/dark-background-wallpaper.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative; }
+
+#particles-js {
+  width: 100%;
+  height: 100%; }
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .hero-content h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .hero-content h2 {
+    font-size: 30px;
+    color: #dfdfdf; }
+  .hero-content h3 {
+    font-size: 20px;
+    color: #afafaf; }
+  .hero-content .download {
+    color: #bfbfbf;
+    background: none;
+    border: 1px #E52E2D solid;
+    border-radius: 1000px;
+    padding: 10px;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    cursor: pointer; }
+    .hero-content .download a {
+      color: #bfbfbf;
+      font-size: 16px; }
+    .hero-content .download:hover {
+      border-color: #bfbfbf; }
+
+.hero-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px #E52E2D solid; }
+  @media screen and (max-width: 768px) {
+    .hero-content img {
+      width: 200px;
+      height: 200px; } }
+
+/***********************************ABOUT STYLES***********************************/
+.about-text {
+  opacity: 0;
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+.about-text-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
+.about-social {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .about-social li {
+    padding-right: 20px; }
+  .about-social .fab, .about-social .far {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 50%;
+    color: #454545;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    cursor: pointer; }
+    .about-social .fab:hover, .about-social .far:hover {
+      color: #E52E2D; }
+
+.skill-progress-container p {
+  color: #454545; }
+
+.skill-progress-container, .eduction-block {
+  margin-bottom: 15px;
+  padding-left: 16px;
+  width: 80%; }
+
+.skill-bar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  background: #a3a3a3; }
+
+.bar-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit; }
+
+.inner-percent {
+  height: inherit;
+  width: 0;
+  background: #E52E2D;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+
+.inner-percent-animate {
+  width: 100%; }
+
+.pcb {
+  width: 80%; }
+
+.asic {
+  width: 85%; }
+
+.eh {
+  width: 90%; }
+  
+.matlab {
+  width: 90%; }
+  
+.us {
+  width: 85%; }
+
+/***********************************PROJECTS STYLES***********************************/
+#projects {
+  background: #f8f9fa; }
+
+.service-block {
+  padding: 20px; }
+  .service-block .icon {
+    color: #E52E2D;
+    font-size: 40px;
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+  .service-block .service-icon-animate {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+.hb:nth-child(1), .hb:nth-child(2), .hb:nth-child(3) {
+  border-bottom: 1px #a3a3a3 solid; }
+
+@media screen and (max-width: 991px) {
+  .hb:nth-child(-n+4) {
+    border-bottom: 1px #a3a3a3 solid; } }
+
+@media screen and (max-width: 768px) {
+  .hb:nth-child(5) {
+    border-bottom: 1px #a3a3a3 solid; } }
+
+.vb:nth-child(1), .vb:nth-child(2), .vb:nth-child(4), .vb:nth-child(5) {
+  border-right: 1px #a3a3a3 solid; }
+
+@media screen and (max-width: 991px) {
+  .vb:nth-child(1), .vb:nth-child(2), .vb:nth-child(4), .vb:nth-child(5) {
+    border-right: none; }
+  .vb:nth-child(2n+1) {
+    border-right: 1px #a3a3a3 solid; } }
+
+@media screen and (max-width: 768px) {
+  .vb:nth-child(-n+6) {
+    border-right: none; } }
+
+/***********************************GALLERY STYLES***********************************/
+#filter-btn {
+  margin-bottom: 40px; }
+  #filter-btn ul {
+    text-align: center; }
+  #filter-btn li {
+    padding-right: 20px; }
+    @media screen and (max-width: 760px) {
+      #filter-btn li {
+        display: block;
+        margin-top: 10px; } }
+  #filter-btn .button {
+    border: 1px #a3a3a3 solid;
+    padding: 10px 30px 10px 30px;
+    border-radius: 500px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+    #filter-btn .button:hover {
+      color: #E52E2D; }
+
+.img-container {
+  position: relative;
+  width: 30%;
+  margin: 10px;
+  height: auto; }
+  .img-container img {
+    border-radius: 10px; }
+  @media screen and (max-width: 760px) {
+    .img-container {
+      width: 100%; } }
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(229, 46, 45, 0.3);
+  border-radius: 10px;
+  outline: 1px solid #fff;
+  outline-offset: -15px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 0; }
+  .img-overlay:hover {
+    opacity: 1; }
+
+.img-overlay-text {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center; }
+  .img-overlay-text h3 {
+    margin: 0; }
+  .img-overlay-text p {
+    color: #fff; }
+
+/***********************************NEWS STYLES***********************************/
+#news {
+  background: url("https://ak8.picdn.net/shutterstock/videos/31218658/thumb/1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff; }
+
+.testimonial-block {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center; }
+  .testimonial-block p:nth-child(1) {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+
+/***********************************CONTACT STYLES***********************************/
+#contact {
+  background: #f8f9fa; }
+
+.contact-block {
+  height: 50px;
+  margin-bottom: 150px; }
+  @media screen and (max-width: 768px) {
+    .contact-block {
+      margin-bottom: 40px; } }
+
+.contact-block .fas, .contact-block .far {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  border: 1px #a3a3a3 solid;
+  border-radius: 50%;
+  color: #454545;
+  float: left; }
+
+.contact-text {
+  float: left;
+  padding-left: 16px; }
+  .contact-text p:first-child {
+    text-align: left;
+    color: #454545;
+    font-weight: bold; }
+
+.field {
+  width: 100%;
+  text-align: left;
+  margin-top: 15px; }
+
+input[type=text] {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  height: 45px;
+  font-size: 1.2em;
+  background: #f8f9fa;
+  border: 1px #a3a3a3 solid;
+  color: #a3a3a3; }
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  background: #f8f9fa;
+  border: 1px #a3a3a3 solid;
+  color: #a3a3a3; }
+
+#contact-submit {
+  padding: 10px;
+  background: none;
+  border: 1px #a3a3a3 solid;
+  cursor: pointer;
+  font-size: 1.2em;
+  float: right; }
+
+/***********************************FOOTER STYLES***********************************/
+footer {
+  background: #111;
+  padding: 12px 0 12px 0;
+  text-align: center; }
+
+.link-header{
+  position: fixed;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  background: #454545;  
+  z-index: 9999;
+  line-height: 50px;
+  overflow: auto;
 }
+
+.link-header a{
+  color: #fff; 
+}
+
+tab { padding-left: 3em; }
+
 </style>
-
-<canvas class="background"></canvas>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Particles</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
-	
+
 <body>
+ 
+  <div class="link-header">
+    <a href="http://sites.google.com/view/sriharshakondapalli" target="_blank">Contents on this webpage are ported from the old version thats on google sites</a>
+  </div>
+ 
+<header id="main-header">
+    <div class="header-wrapper">
+        <a class="logo" href="#">ksree</a>
 
-  <div class="container">
-  <div class="word_split wrapper">
-  <span class="word word1">Sri Harsha </span>
-  <span class="word word2">Kondapalli</span>
-  <span class="word word3">Personal</span>
-  <span class="word word4">Details</span>
-  <span class="word word5">Employment</span>
-  <span class="word word6">History </span>
-  <span class="word word7">Education</span>
-  <span class="word word8">Personal</span>
-  <span class="word word9">Achievements</span>
-  <span class="word word10">Technical</span>
-  <span class="word word11">Skills </span>
-  <span class="word word12">Get In </span>
-  <span class="word word13">Touch</span>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <!--Main nav to navigate to different parts of the page-->
+                <li><a id="hero-link" href="#hero">Home</a></li>
+                <li><a id="about-link" href="#about">About</a></li>
+                <li><a id="projects-link" href="#projects">Projects</a></li>
+                <li><a id="gallery-link" href="#gallery">Gallery</a></li>
+                <li><a id="news-link" href="#news">News</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
     
-    <div class="bubble1">
-     <span class="the-arrow1"></span>
-      HI! <br/> I AM..
-   </div>
-  <div class="bubble2">
-     <span class="the-arrow2"></span>
-    <img src="./DP.jpg"/>
-   </div>
-  <div class="bubble3">
-     <span class="the-arrow3"></span>
-    BIRTHDAY: March 11<br/><br/>
-    NATIONALITY: India<br/>
-	<br/>
-    PRESENT ADDRESS:<br/>
-	6151 Waterman Blvd, Apt # 1N,
-	St. Louis, MO, USA 63112<br/>
-    <br/>
-    WORK ADDRESS:<br/>
-    Room No - 0160,
-	Green Hall,<br/>
-	One Brookings Drive,<br/>
-	St. Louis, MO, USA 63130<br/>
-   </div>
-  <div class="bubble4">
-     <span class="the-arrow4"></span>
-    Graduate Student Researcher 2015-Current<br/>
-    Adaptive Integraed Microsystems Laboratory<br/>
-	Mc Kelvey School of Engineering<br/>
-    Washington University in St. Louis<br/>
-    <br/>
-	Teaching Assistant 2015-2016<br/>
-	Washington University in St. Louis<br/>
-	<br/>
-    Summer Intern 2013<br/>
-	Imagination Technologies, India<br/>
+<!--------------------------------------HERO IMAGE-------------------------------------->
+
+<<section id="hero">
+    <div id="particles-js">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="hero-content">
+                    <img src="https://cpb-us-w2.wpmucdn.com/sites.wustl.edu/dist/0/141/files/2017/12/sriharsha3-1gvikqi-458x458.jpg">
+                    <h1>Hello!</h1>
+					<h2>I'm Sri Harsha Kondapalli</h2>
+                    <h3 id="hero-text-animation">Ph.D. Candidate</h3>
+                    <button class="download"><a download href="http://wustl.box.com/v/SriHarshaKondapalliCV">Download CV</a></button><!--To add your file simply replace example.txt with whatever file you want-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------ABOUT SECTION-------------------------------------->
     
-   </div>
-  <div class="bubble5">
-     <span class="the-arrow5"></span>
-    Ph.D. Candidate<br/>
-    Electrical and Systems Engineering<br/>
-    Washington University in St. Louis, MO, USA<br/><br/>
-    M.S. 17'<br/>
-    Electrical and Systems Engineering<br/>
-    Washington University in St. Louis, MO, USA<br/><br/>
-	B.Tech. 14' <br/>
-    Electrical Engineering<br/>
-    IIT Hyderabad, India
-    
-   </div>
-  <div class="bubble6">
-     <span class="the-arrow6"></span>
-    Champions of RFID Mega Challenge 2019<br/>
-    Awardee of LEAP Inventor Challenge<br/>
-    Co-Founder of Therabotics.Inc<br/>
-    Runner-up in WashU Patent Challenge<br/>
-	Part of Guinness World Record<br/>
-	Vice-President of UMANG Grad Student Org<br/>
-   </div>
-  <div class="bubble7">
-     <span class="the-arrow7"></span>
-    RF Engineering<br/>
-    PCB Design<br/>
-    Cadence<br/>
-    ASIC Design<br/>
-    Soldering<br/>
-	USRP<br/>
-    Ultrasound Engineering<br/>
-    MATLAB<br/>
-	Automatic Test Equipment<br/>
-   </div>
-  <div class="bubble8">
-     <span class="the-arrow8"></span>
-    PHONE: +1-314-326-0339<br/>
-    EMAIL: <a href="mailto:sriharshakondapalli@wustl.edu">sriharshakondapalli@wustl.edu</a><br/>
-    WEBSITE: <a href="sites.google.com/view/sriharshakondapalli">sites/sriharshakondapalli</a><br/>
-    LINKEDIN: <a href="https://www.linkedin.com/in/sriharshakondapalli7"> linkedin/sriharshakondapalli</a><br/>
-    FACEBOOK: <a href="https://www.facebook.com/kondapalli.sriharsha">facebook/sriharshakondapalli</a> <br/>
-    INSTAGRAM: <a href="https://www.instagram.com/sri_harsha_kondapalli">instagram/sriharshakondapalli</a><br/>
-   </div>   
-</div>
+<section id="about">
+    <div class="container">
+        <div class="row left-xs left-sm left-md left-lg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-text">
+                    <h2>Hi, I'm <span class="accent-text">Sri Harsha Kondapalli</span></h2>
+                    <p> <tab> I have over four years of experience in RF engineering, ASIC design, Digital Signal Processing, and Ultrasound engineering. Expertise in prototyping energy harvesting wireless sensors and mixed-signal integrated circuits with applications to infrastructure-to-vehicular communication and implantable bio-medical devices. Currently working on my dissertation titled 'Variance-based-Informatics: Theory and design of variance driven physical systems' under the supervision of Prof. Shantanu Chakrabartty and co-advised by Prof. Xuan 'Silvia' Zhang. This research work is applicable in designing low latency and energy efficient wireless sensors using novel architectures called Variance-based-Logic.
+                    </p>
+                    <ul class="about-social">
+                        <li><a href="mailto: sriharshakondapalli@wustl.edu"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.facebook.com/kondapalli.sriharsha"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://github.com/sriharshakondapalli"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sriharshakondapalli7/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/sri_harsha_kondapalli/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+				<div class="row">
+					<div class="column">
+						<h4>Home Address:</h4><br>
+						<p>6151 Waterman Blvd, Apt #1N,</p>
+						<p>St. Louis, MO, USA 63112</p>
+						<p>Ph: +1-314-326-0339</p>
+					</div>
+					<div class="column">
+						<h4> <tab> </h4><br>
+						<p> <tab> </p>
+						<p> <tab> </p>
+						<p> <tab> </p>
+					</div>
+					<div class="column">
+						<h4>Work Address:</h4><br>
+						<p>One Brookings Drive,</p>
+						<p>St. Louis, MO, USA 63130</p>
+						<p>Ph: +1-314-935-2867</p>
+					</div>
+				</div>
+				<br><br>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-resume">
+                    <div class="education">
+                        <h2>My Education</h2>
+                        <div class="eduction-block">
+                            <h4>Washington University in St. Louis</h4>
+                            <p>Ph.D. in Electrical and Systems Engineering (2015-Present)</p>
+							<p> M.S. in Electrical and Systems Engineering (2014-2017)</p>
+                        </div>
+                        <div class="eduction-block">
+                            <h4>Indian Institute of Technology, Hyderabad</h4>
+                            <p>B.Tech. in Electrical Engineering (2010-2014)</p>
+                        </div>
+                    </div>
+					<div class="skills">
+                        <h2>My Skills</h2>
+                        
+                        <div class="skill-progress-container">
+                            <p>PCB Design and Assembly</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent pcb"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Cadence Virtuoso</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent asic"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Energy Harvesting</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent eh"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+						
+                        <div class="skill-progress-container">
+                            <p>MATLAB</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent matlab"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+						
+                        <div class="skill-progress-container">
+                            <p>Ultrasound</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent us"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
    
-</div><!--end container-->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!--------------------------------------PROJECTS SECTION-------------------------------------->
 
-    <script  src="./script.js"></script>
+<section id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h1>My <span class="accent-text">Projects</span></h1>
+        </div>
+        
+        <div class="row center-xs center-sm center-md center-lg trigger"><!--Row 1-->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+					<img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F539269%2Fself-driving-autonomous-driving-getty-71217.jpg&w=700&op=resize">
+					<i class="icon fas fa-code"></i>
+                    <h3>Infrastructure to Vehicular Communication</h3>
+                    <p>Addressing the needs of infrastructure-to-vehicular communication by developing a new class of wireless RF sensors.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/245/245491/ultrasound-scan.jpg">                  
+					<i class="icon fas fa-laptop"></i>
+                    <h3>Ultrasound Telemetry</h3>
+                    <p>Investigating the feasibility of self-powered sonomicrometry system by employing energy harvesting sensors and extracting power from cardiac vibrations.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <img src="https://www.tubefilter.com/wp-content/uploads/2018/01/white-noise.jpg">                  
+					<i class="icon fas fa-mobile-alt"></i>
+                    <h3>Varaince based Logic</h3>
+                    <p>Exploring the fundamental limits pertaining to energy dissipation in the process of a single logic bit flip for communication, computation and sensing.</p>
+                </div>
+            </div>  
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <img src="https://i.stack.imgur.com/8mWHX.jpg">                  
+					<i class="icon far fa-file-alt"></i>
+                    <h3>Self-powered Sensors</h3>
+                    <p>Developing self-powered recorders and data-loggers that operate without the need of power sources and moniter environment conditions.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <img src="https://cdn.vox-cdn.com/thumbor/m87C_8ta7lm5lws4GVAA86_UnBM=/0x275:4077x2993/1200x800/filters:focal(0x275:4077x2993)/cdn.vox-cdn.com/uploads/chorus_image/image/50076583/Mobius_Bionics_LUKE_Arm_Large.0.0.jpg">                  
+					<i class="icon far fa-copy"></i>
+                    <h3>Therabotics</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <img src="https://www.eff.org/files/2016/12/13/2fa-1.png">                  
+					<i class="icon fas fa-cogs"></i>
+                    <h3>Assure</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+    
+<!--------------------------------------GALLERY SECTION-------------------------------------->
+    
+<section id="gallery">
+    <div class="container">
+        <div class="section-title">
+            <h1>My <span class="accent-text">Gallery</span></h1>
+        </div>
+        
+        <div id="filter-btn" class="button-group">
+            <ul>
+                <!--Buttons for the image filter-->
+                <!--data-filter="What ever you want your image to be filter by"-->
+                <li><button class="button is-checked" data-filter="*">All</button></li>
+                <li><button class="button" data-filter=".graph">Graph</button></li>
+                <li><button class="button" data-filter=".design">Design</button></li>
+                <li><button class="button" data-filter=".brand">Brand</button></li>
+                <!--End of image filter buttonimg/ports-->
+            </ul>
+        </div>
+        
+        <div class="img-grid">
+            <div class="img-container graph" data-category="graph">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container brand" data-category="brand">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container graph" data-category="graph">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!--To add more images simply copy and paste the block of code below not including the comments for each new image.
+            If adding more images and you decide that you want a max-height and a overlay of auto meaning a scroll bar will display once you go past the max
+            height simply comment out the two blocks of code in styles.scss in the gallery section in .img-grid.
 
-	
-<script type="text/javascript">
-var particles;
-particles = Particles.init({
-  selector: ".background",
-  color: ["#DA0463", "#404B69", "#DBEDF3"],
-  connectParticles: true,
-  speed: 5
+            <div class="img-container graph" data-category="graph">
+                <img src="img/gallery-img.jpeg">
+                <div class="img-overlay popup-gallery" href="img/gallery-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            End of bock of code for copying and pasting-->
+            
+        </div>
+        
+    </div>
+</section>
+    
+<!--------------------------------------NEWS SECTION-------------------------------------->    
+    
+<section id="news">
+    <div class="container">
+        <div class="section-title">
+            <h1>News</h1>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <!--To add more testimonial simply and copy and paste another testimonial what is the block of code inbetween these comments-->
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+            <!--End of testimonial-->
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--------------------------------------CONTACT SECTION-------------------------------------->
+    
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h1>Contact <span class="accent-text">Me</span></h1>
+        </div>
+        
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="contact-info">
+                    
+                    <div class="contact-block">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="contact-text">
+                            <p>Call</p>
+                            <p>+1-314-326-0339</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-block">
+                        <i class="far fa-envelope"></i>
+                        <div class="contact-text">
+                            <p>Email</p>
+                            <p>sriharshakondapalli@wustl.edu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-block">
+                        <i class="fas fa-location-arrow"></i>
+                        <div class="contact-text">
+                            <p>Address</p>
+                            <p>St. Louis, MO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <form id="contact-form" onsubmit="submitForm(); return false;">
+                    <div class="field">
+                        Name<br>
+                        <input type="text" id="name" value="yourname" required>
+                    </div>
+                    <div class="field">
+                        Email<br>
+                        <input type="text" id="email" value="yourname@email.com" required>
+                    </div>
+                    <div class="field">
+                        Subject<br>
+                        <input type="text" id="subject" value="Your subject" required>
+                    </div>
+                    <div class="field">
+                        Message<br>
+                        <textarea id="message" rows="10" cols="75" required>Hello World!</textarea>
+                    </div>
+                    <div class="field">
+                        <input type="submit" id="contact-submit" value="Submit Form"><span id="status"></span>
+                    </div>
+                </form>
+            </div>
+        
+        </div>
+    </div>
+</section>
+    
+<!--------------------------------------FOOTER SECTION-------------------------------------->
+
+<footer>
+    <p>Copyrights for content displayed on this page &#169; ksree. Disclaimer: HTML template borrowed from an open platform (Author: Brian)</p>
+</footer>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script>
+<script  type="text/javascript">
+/*******************************************IMAGE GALLERY*******************************************/
+
+/*******Filtering*******/
+
+// init Isotope
+  var $grid = $('.img-grid').isotope({
+    itemSelector: '.img-container',
+    //layoutMode: 'fitRows',
+  });
+
+  // filter functions
+  var filterFns = {
+    // show if number is greater than 50
+    numberGreaterThan50: function() {
+
+    },
+  };
+
+  // bind filter button click
+  $('#filter-btn').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+
+/*******Popup Image Gallary in Porfolio*******/
+
+$('.popup-gallery').magnificPopup({
+  type: 'image',
+  gallery:{
+    enabled:true
+  }
 });
-function pause() {
-  particles.pauseAnimation();
-}
-function resume() {
-  particles.resumeAnimation();
-}
+
+/*******************************************CAROUSEL IN MY NEWS*******************************************/
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    center: true,
+    items:1,
+    loop:true,
+    margin:10,
+    responsive:{
+      600:{
+        items:1
+      }
+    }
+  });
+});
+
+/*******************************************SCROLL MAGIC*******************************************/
+
+/*******Scroll for the links*******/
+var controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({triggerElement: "#hero", duration: $("#hero").height()}).setClassToggle("#hero-link", "active").addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#about", duration: $("#about").height() + 100}).setClassToggle("#about-link", "active").addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#projects", duration: $("#projects").height()}).setClassToggle("#projects-link", "active").addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#gallery", duration: $("#gallery").height()}).setClassToggle("#gallery-link", "active").addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#news", duration: $("#news").height() + 250}).setClassToggle("#news-link", "active").addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#contact", duration: $("#contact").height()}).setClassToggle("#contact-link", "active").addTo(controller);
+
+/*******Other Scroll Magic Elements*******/
+
+$(document).ready(function(){
+
+  var controller2 = new ScrollMagic.Controller();
+
+  //The about paragraph
+  var about_scene = new ScrollMagic.Scene({
+    triggerElement: '.about-text',
+    triggerHook: .7
+  })
+  .setClassToggle('.about-text', 'about-text-animate')
+  .reverse(false)
+  .addTo(controller2);
+    
+
+  //Progress bars
+  var progress_bar_scene = new ScrollMagic.Scene({
+
+    triggerElement: '.about-resume',
+    triggerHook: .7,
+
+  })
+  .setClassToggle('.inner-percent', 'inner-percent-animate')
+  .reverse(false)
+  .addTo(controller);
+    
+  //Icons in projects
+  var about_scene = new ScrollMagic.Scene({
+    triggerElement: '.trigger',
+    triggerHook: .7
+  })
+  .setClassToggle('.icon', 'service-icon-animate')
+  .reverse(false)
+  .addTo(controller2);
+    
+});
+
+/*******************************************MOBILE NAV*******************************************/
+$('.mobile-toggle').click(function(){
+  if($('#main-header').hasClass('open-nav')){
+     $('#main-header').removeClass('open-nav');
+  }else{
+    $('#main-header').addClass('open-nav');
+  }
+});
+
+/*******************************************NAV SCROLL*******************************************/
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+
+/*******************************************PRELOAD*******************************************/
+var overlay = document.getElementById("preload-overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = "none";
+})
+
+/***********************Particles*************/
+
+particlesJS("particles-js", {"particles":{"number":{"value":120,"density":{"enable":true,"value_area":800}},"color":{"value":"#E52E2D"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 </script>
-	
+
 </body>
 </html>
