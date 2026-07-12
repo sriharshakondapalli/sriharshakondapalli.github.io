@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Powered Sensing | Sri Harsha Kondapalli</title>
 <style>
 * {
   -webkit-box-sizing: border-box;
@@ -12,24 +14,24 @@
 body, html {
   margin: 0;
   padding: 50px;
-  height: 100%; 
+  height: 100%;
   background-color: #F3F9FE;}
 
 .container {
   margin: auto;
   padding-top: 40px;
   padding-bottom: 40px; }
- 
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: auto;
 }
-  
+
 h2 {
   font-size: 30px;}
-  
+
 h4 {
   font-size: 25px;}
 
@@ -40,50 +42,29 @@ h5 {
 
 
 <body>
-<h1 style="font-family: Bookman Old Style;font-size: 60px;text-align: center;"><strong>Variance based Informatics</strong></h1>
+<h1 style="font-family: Bookman Old Style;font-size: 60px;text-align: center;"><strong>Self-Powered Sensing</strong></h1>
 
-<!--
-<a href="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig1.png"><img class="aligncenter size-full wp-image-194" src="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig1.png" alt="" width="1706" height="649" /></a>
-<p style="text-align: right;">Source: IEEE ISCAS, 2016</p>
-
-<h2 style="text-align: center;"><strong>"Infrastructural internet of things (i-IoTs) are the future of smart cities."</strong></h4>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EnMp0OaAJRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P8hpsapTOo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NShILFdLKqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<ul>
- 	<li>Sep,2016: <a href="https://engineering.wustl.edu/news/Pages/Building-smarter-safer-infrastructure.aspx">https://engineering.wustl.edu/news/Pages/Building-smarter-safer-infrastructure.aspx</a></li>
- 	<li>NSF, Proj: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646380">https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646380</a></li>
- 	<li>NSF, PDF:<a href="https://cps-vo.org/node/40208">https://cps-vo.org/node/40208</a></li>
-</ul>
--->
-
-<h4>Variance-based-Logic: Variance driven Micro-Processor</h4>
-<a href="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig5.jpg"><img class="wp-image-237 center" src="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig5.jpg" alt="" width="658" height="444" /></a>
-<p style="text-align: right;">Source: IEEE ISCAS, 2017</p>
-<h2 style="text-align: center;"><em><strong>"Exploring the fundamental limits in Digital Computation"</strong></em></h2>
+<h4>Fowler-Nordheim Tunneling Timers: Zero-Power Dynamic Authentication</h4>
+<img class="center" src="../assets/images/projects/SPS.png" alt="Fowler-Nordheim tunneling through the gate oxide of a floating-gate device" style="max-width: 700px;" />
+<p style="text-align: right;">Source: AIMS Lab, WUSTL</p>
+<h2 style="text-align: center;"><em><strong>"Sensing and time-keeping without batteries"</strong></em></h2>
 <h5>Project Description:</h5>
-<div class="gs_scl">
-<div id="gsc_vcd_descr" class="gsc_vcd_value">
-<div></div>
-<div class="gsh_small">In this research, we explore a novel approach for designing digital circuits that uses the variance of a signal to represent Boolean logic levels. The variance-based logic (VBL) representation enables embedding of rectification and multiplication modules within the basic logic cells and unlike AC-coupled or energy-recovery logic circuits the proposed approach obviates the need for any phase synchronization. As a result, VBL representation can be used for designing low-latency digital circuits that are directly powered by a combination of energy transducers with different frequency and source impedance characteristics. We investigate VBL circuits that can be implemented in a standard CMOS and beyond CMOS devices.</div>
-</div>
-</div>
-<div class="gs_scl"></div>
-<h5>List of publicaitons:</h5>
+In this research, we develop sensors and timers that operate without any active power source by exploiting Fowler-Nordheim (FN) quantum tunneling of electrons through the gate oxide of floating-gate devices. Once initialized, the charge on the floating gate leaks at a physically determined, well-modeled rate, allowing the device to keep time, log events and sense its environment for months while dissipating near-zero power. Because the desynchronization between a pair of FN timers is practically impossible to clone or tamper with, the same mechanism can be used as a dynamic authenticator for passive Internet-of-Things devices, enabling trust verification across the electronics supply chain. Floating-gate temperature sensors based on the same principle were validated from -10&deg;C to +50&deg;C with &plusmn;1&deg;C accuracy for cold-chain and supply-chain integrity monitoring.
+<h5>List of Publications:</h5>
 <ul>
- 	<li>Sri Harsha Kondapalli, Xuan Zhang and Kenji Aono. "Variance-based digital logic for energy harvesting internet-of-things."<em> IEEE International</em> <i>Symposium on Circuits and Systems (ISCAS), 2017.</i></li>
+ 	<li>Sri Harsha Kondapalli, Kenji Aono and Shantanu Chakrabartty. "Fowler-Nordheim tunneling timer desynchronization for IoT device trust verification." <em>IEEE Transactions on Internet of Things</em>, 2019.</li>
+ 	<li>Sri Harsha Kondapalli, Kenji Aono and Shantanu Chakrabartty. "Self-powered floating-gate temperature sensor for supply-chain integrity." <em>IEEE 62nd International Midwest Symposium on Circuits and Systems (MWSCAS)</em>, 2019.</li>
+ 	<li>Sri Harsha Kondapalli and Shantanu Chakrabartty. "Zero-powered authentication using Fowler-Nordheim tunneling timers." <em>NSF Technology Transfer Program (TTP) Poster, Chicago</em>, 2019.</li>
 </ul>
-<h4>Variance-based-Logic: Variance driven Communication</h4>
-<a href="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig6.png"><img class=" wp-image-242 center" src="https://sites.wustl.edu/sriharshakondapalli/files/2019/07/Fig6.png" alt="" width="657" height="341" /></a>
-<p style="text-align: right;">Source: Engrxiv, 2019</p>
-<h2 style="text-align: center;"><em><strong>"Pushing the boundaries of Digital Communication"</strong></em></h2>
+
+<h4>RF-Triggered Wake-up: Hybrid-Powered Passive IoT</h4>
+<h2 style="text-align: center;"><em><strong>"Listen for free, act only when needed"</strong></em></h2>
 <h5>Project Description:</h5>
-In variance-based logic (VBL), information is encoded by the change in the variance of a signal as opposed to the conventional mean-based logic (MBL) where the information is encoded by the change in the mean of the signal. In this research, we compare the fundamental limits on the minimum energy per bit that can be achieved by VBL and MBL representations in high-dimensional signal space. We show that while for MBL representations, the trade-off between the energy-per-bit and the bit-error-rate (BER) is fundamentally constrained by the classical Shannon-limit, using VBL representations it is theoretically possible to achieve arbitrarily small BER while dissipating near-zero energy-per-bit. This surprising result has been experimentally verified for Additive-white-Gaussian-Noise (AWGN) channels using Monte-Carlo simulations. We believe that high-dimensional VBL based encoding could provide a new approach for designing ultra-energy-efficient
-communication and sensing systems.
-<h5>List of publicaitons:</h5>
+Continuously listening radios dominate the power budget of wireless sensors. We developed an RF-triggered, hybrid wake-up architecture in which an ultra-low-power RF energy-harvesting front-end (915 MHz helical antenna with a 5-stage Dickson charge pump) passively monitors the channel and activates the battery-powered sensor node only when interrogated. This shifts the limiting factor of the sensor node from battery life to component lifetime, and is compatible with commercial UHF RFID infrastructure. A software-defined-radio (GNU Radio) interrogator was developed to characterize the end-to-end trigger link.
+<h5>List of Publications:</h5>
 <ul>
- 	<li>Sri Harsha Kondapalli, Xuan Zhang and Shantanu Chakrabartty.Â  "Energy-Dissipation Limits in variance-based Computing." <i>Fluctuation and Noise Letters</i>, 2018.</li>
- 	<li>Sri Harsha Kondapalli and Shantanu Chakrabartty. "High-dimensional Variance based Logic for Reliable Communication at Near-zero Energy-per-bit." <em>Engrxiv</em>, 2019.</li>
+ 	<li>Sri Harsha Kondapalli, Owen Pochettino, Kenji Aono and Shantanu Chakrabartty. "Hybrid-Powered Internet-of-Things for Infrastructure-to-Vehicle Communication." <em>IEEE 61st International Midwest Symposium on Circuits and Systems (MWSCAS)</em>, 2018.</li>
+ 	<li>Sri Harsha Kondapalli, Owen Pochettino, Kenji Aono and Shantanu Chakrabartty. "SDR-based RF trigger interrogator for passive wake-up sensing." <em>GNU Radio Conference (GRCon)</em>, 2019.</li>
 </ul>
 
 </body>
